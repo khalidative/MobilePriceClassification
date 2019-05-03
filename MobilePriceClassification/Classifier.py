@@ -138,3 +138,5 @@ with open('result.csv', 'w') as f:
     for i in range(1000):
         prediction = np.argmax(predictions[i])
         writer.writerow({'id': i+1, 'price_range': prediction})
+
+print("classification tof the test data is done, results have entered into the results file")
